@@ -1,0 +1,29 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Creators
+{% endblock %}
+
+{% block content %}
+	<h1>Creators</h1>
+	<div class="alert alert-black" role="alert">
+    {% if tasks %}
+		{% for el in tasks %}
+				<center>
+				<h3>{{ el.name }} </h3>
+				<p>{{ el.text }}</p>
+				</center>
+				<hr>
+		{% endfor %}
+	{% endif %}
+
+  
+  <p style="font-weight:bolder"><img src=https://static.wikia.nocookie.net/overwatch/images/1/10/Genji_icon.png/revision/latest/smart/width/250/height/250?cb=20151113193128&path-prefix=ru height=75px> Merryday#21818</p>
+  <hr>
+  
+  <p style="font-weight:bolder"><img src=https://static.wikia.nocookie.net/overwatch/images/0/00/Brigitte_icon.png/revision/latest/smart/width/250/height/250?cb=20180228192117 height=75px> Astra#22476</p>
+</div>
+
+{% endblock %}
+
+
